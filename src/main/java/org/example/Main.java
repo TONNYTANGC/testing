@@ -39,7 +39,7 @@ class x {
     }
     // inheritance
     void method2(String s) {
-        System.out.println("FOUR");
+        System.out.println("FOURR");
     }
 }
     // polymorphism
