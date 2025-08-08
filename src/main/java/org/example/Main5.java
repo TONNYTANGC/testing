@@ -12,7 +12,7 @@ public class Main5 {
         double amount = 0.0;
         for (String[] strings : itemArr) {
             for (int j = 0; j < strings.length - 2; j++) {
-                String itemName = strings[j].toString();
+                String itemName = strings[j];
                 double quantity = Double.parseDouble(strings[j + 1]);
                 double price = Double.parseDouble(strings[j + 2]);
                 double total = quantity * price;
