@@ -10,11 +10,11 @@ public class Main5 {
 
     private static void calculateAndPrint(String[][] itemArr) {
         double amount = 0.0;
-        for (int i = 0; i < itemArr.length; i++) {
-            for (int j = 0; j < itemArr[i].length - 2; j++) {
-                String itemName = itemArr[i][j].toString();
-                double quantity = Double.parseDouble(itemArr[i][j + 1]);
-                double price = Double.parseDouble(itemArr[i][j + 2]);
+        for (String[] strings : itemArr) {
+            for (int j = 0; j < strings.length - 2; j++) {
+                String itemName = strings[j].toString();
+                double quantity = Double.parseDouble(strings[j + 1]);
+                double price = Double.parseDouble(strings[j + 2]);
                 double total = quantity * price;
                 amount += total;
 
