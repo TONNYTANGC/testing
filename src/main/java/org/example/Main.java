@@ -54,5 +54,6 @@ public class Main {
     public static void main(String[] args) {
         new y ().method(100.00);
         new x ().method2("Hello");
+        Person person = new Person("John", 30);
     }
 }
